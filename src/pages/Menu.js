@@ -35,7 +35,7 @@ function Menu() {
                       {" "}
                       <small className="text-muted">
                         {" "}
-                        Lorem ipsum, dolor sit amet consectetur adipisicing.
+                        Detect presence of mask in the group of people
                       </small>{" "}
                     </p>
                   </div>
@@ -59,7 +59,7 @@ function Menu() {
                       {" "}
                       <small className="text-muted">
                         {" "}
-                        Lorem ipsum dolor sit amet.
+                        Maintains Social Distancing in the public and alert the system If someone Breaks it.
                       </small>{" "}
                     </p>
                   </div>
@@ -79,7 +79,7 @@ function Menu() {
                       {" "}
                       <small className="text-muted">
                         {" "}
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Donate to the Real Verified Covid Relief Funds.
                       </small>{" "}
                     </p>
                   </div>
@@ -93,13 +93,13 @@ function Menu() {
                     {" "}
                     <img src={speaker4} alt="" />{" "}
                   </div>
-                  <div className="card-title mt-4">Covid Live Reports</div>
+                  <div className="card-title mt-4"><a href = "https://covid-19-live-amandeep.herokuapp.com/">Covid Live Reports</a></div>
                   <div className="card-subtitle">
                     <p>
                       {" "}
                       <small className="text-muted">
                         {" "}
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos!
+                        Check Out the live status of Covid-19 Cases in India.
                       </small>{" "}
                     </p>
                   </div>
@@ -124,7 +124,7 @@ function Menu() {
                       {" "}
                       <small className="text-muted">
                         {" "}
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, tenetur?
+                        Supply Food to the needy and isolated victim of COVID-19.
                       </small>{" "}
                     </p>
                   </div>
