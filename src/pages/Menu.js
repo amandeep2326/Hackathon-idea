@@ -6,6 +6,7 @@ import speaker2 from "../assets/social.jpg";
 import speaker3 from "../assets/mask.png";
 import speaker4 from "../assets/covid.jpg";
 import speaker15 from "../assets/food.jpg";
+import speaker35 from "../assets/vaccine2.png";
 function Menu() {
   return (
     <div className="container-fluid cf pt-5 pb-5">
@@ -106,11 +107,28 @@ function Menu() {
                 </div>
               </div>
             </div>
+            <div className="card col-md-3 mt-4">
+              <div className="card-content">
+                <div className="card-body p-0">
+                  <div className="profile">
+                    {" "}
+                    <img src={speaker35} alt="" />{" "}
+                  </div>
+                  <div className="card-title mt-4">Vaccines</div>
+                  <div className="card-subtitle">
+                    <p>
+                      {" "}
+                      <small className="text-muted">
+                        {" "}
+                        Vaccine Slots 
+                      </small>{" "}
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
             
           
-
-            
-
             <div className="card col-md-3 mt-4">
               <div className="card-content">
                 <div className="card-body p-0">
