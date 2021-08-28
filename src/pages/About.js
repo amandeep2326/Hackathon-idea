@@ -1,23 +1,70 @@
 import React from "react";
-import corona from "../assets/corona.png";
 import "../styles/About.css";
+import aman from "../assets/aman.jpg"
+import aditya from "../assets/adi.jpg";
+import kshitij from "../assets/kshitiz.jpg"
 function About() {
   return (
-    <div className="about">
-      <div
-        className="aboutTop"
-        style={{ backgroundImage: `url(${corona})` }}
-      ></div>
-      <div className="aboutBottom">
-        <h1> ABOUT US</h1>
-        <p>
-        Our Prototype Consists of a face mask detection system andthermal processing to detect fever. We are using highly accuratealgorithms and deep learning methods in this prototype.
-You can use this in analyzing around 100 patients at the sametime which really helps our hospital management to skip goingthrough each one and check his/her temperature.
-It can also use as a system attached to the security camera andcheck on people who are wearing masks and following rules andwho are not.
-Recently Majority Countries Faces the most important problemsin covid times that is Vaccine Unavailability.
-        </p>
-      </div>
-    </div>
+<section className="team-section">
+     <div className="container">
+         <div className="row">
+             <div className="section-title">
+                 <h1>Our Team</h1>
+                 <p>TRIO_KNIGHTS</p>
+             </div>
+         </div>
+         <div className="row">
+             <div className="team-items">
+                  <div className="item">
+                      <img src={aditya} alt="team" />
+                      <div className="inner">
+                          <div className="info">
+                               <h5>Aditya Kumar</h5>
+                               <p>WEB AND BLOCKCHAIN DEVELOPER</p>
+                               <div className="social-links">
+                                   <a href="n"><span className="fa fa-facebook"></span></a>
+                                   <a href="n"><span className="fa fa-twitter"></span></a>
+                                   <a href="n"><span className="fa fa-linkedin"></span></a>
+                                   <a href="n"><span className="fa fa-youtube"></span></a>
+                               </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div className="item">
+                      <img src={aman} alt="team" />
+                      <div className="inner">
+                          <div className="info">
+                               <h5>AMANDEEP SINGH</h5>
+                               <p>MERN STACK WEB DEVELOPER AND KOTLIN APP DEVELOPER</p>
+                               <div className="social-links">
+                                   <a href="n"><span className="fa fa-facebook"></span></a>
+                                   <a href="n"><span className="fa fa-twitter"></span></a>
+                                   <a href="n"><span className="fa fa-linkedin"></span></a>
+                                   <a href="n"><span className="fa fa-youtube"></span></a>
+                               </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div className="item">
+                      <img src={kshitij} alt="team" />
+                      <div className="inner">
+                          <div className="info">
+                               <h5>KSHITIJ SINGH</h5>
+                               <p>GRAPHIC DESIGNER AND FRONT-END WEB DEVELOPER</p>
+                               <div className="social-links">
+                                   <a href="n"><span className="fa fa-facebook"></span></a>
+                                   <a href="n"><span className="fa fa-twitter"></span></a>
+                                   <a href=","><span className="fa fa-linkedin"></span></a>
+                                   <a href="m"><span className="fa fa-youtube"></span></a>
+                               </div>
+                          </div>
+                      </div>
+                  </div>
+             </div>
+         </div>
+     </div>
+  </section>
+       
   );
 }
 

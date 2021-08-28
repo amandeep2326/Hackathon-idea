@@ -10,4 +10,9 @@ export const MenuList = [
     name: "Vaccine",
     image: vaccine,
   },
+  {
+    name: "Social Distancing Detection",
+    image: vaccine,
+    link: " https://amandeep2326.github.io/Hackathon-Social-distancing-UI/",
+  },
 ];

@@ -1,34 +1,96 @@
-import React from "react";
-import background from "../assets/bg1.jpg";
 import "../styles/Contact.css";
+import React, { useState } from "react";
+// import { db } from "../firebase.js";
 
-function Contact() {
+const Contact = () => {
+  
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+
+  // const handleSubmit = (e) => {
+  //   e.preventDefault();
+  //   db.collection("contacts")
+  //     .add({
+  //       name: name,
+  //       email: email,
+  //       message: message,
+  //     })
+  //     .then(() => {
+  //       alert(
+  //         "Your Message has been submitted "
+  //       );
+  //     })
+  //     .catch((error) => {
+  //       alert(error.message);
+  //     });
+  //   setName("");
+  //   setEmail("");
+  //   setMessage("");
+  // };
   return (
-    <div className="contact">
-      <div
-        className="leftSide"
-        style={{ backgroundImage: `url(${background})` }}
-      ></div>
-      <div className="rightSide">
-        <h1> Contact Us</h1>
+    <>
+      <div className="container-fluid cf pt-3 pb-1">
+        <div className="container con">
+          <div className="row">
+            <div className="col-lg-8 offset-lg-2 col-12">
+              <div className="row">
+                <div className="col-lg-12 col-12 p-0 section-header pt-4">
+                  <h2 className="">Contact Us</h2>
+                </div>
+              </div>
 
-        <form id="contact-form" method="POST">
-          <label htmlFor="name">Full Name</label>
-          <input name="name" placeholder="Enter full name..." type="text" />
-          <label htmlFor="email">Email</label>
-          <input name="email" placeholder="Enter email..." type="email" />
-          <label htmlFor="message">Message</label>
-          <textarea
-            rows="6"
-            placeholder="Enter message..."
-            name="message"
-            required
-          ></textarea>
-          <button type="submit"> Send Message</button>
-        </form>
+              <div className="row bg-light pt-3 pb-3 mb-4">
+                <div className="col-lg-6 col-12">
+                  <form>
+                    <div className="form-row mb-3">
+                      <div className="col">
+                        <input
+                          type="text"
+                          class="form-control"
+                          placeholder="Name :"
+                          value={name}
+                          onChange={(e) => setName(e.target.value)}
+                        />
+                      </div>
+                    </div>
+                    <div className="form-row mb-3">
+                      <div className="col">
+                        <input
+                          type="text"
+                          class="form-control"
+                          placeholder="Email :"
+                          value={email}
+                          onChange={(e) => setEmail(e.target.value)}
+                        />
+                      </div>
+                    </div>
+                    <div className="form-group">
+                      <textarea
+                        className="form-control"
+                        id="exampleFormControlTextarea1"
+                        rows="3"
+                        placeholder="Message :"
+                        value={message}
+                        onChange={(e) => setMessage(e.target.value)}
+                      ></textarea>
+                    </div>
+                    <button
+                      type="submit"
+                      class="btn mb-4"
+                      style={{ backgroundColor: "lightblue" }}
+                    >
+                      Submit
+                    </button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
+    </>
   );
-}
+};
 
 export default Contact;
