@@ -156,7 +156,7 @@ function Menu() {
                     {" "}
                     <img src={speaker15} alt="" className="img-fluid" />{" "}
                   </div>
-                  <div className="card-title mt-4">Food Supply</div>
+                  <div className="card-title mt-4"><a href = "https://amandeep2326.github.io/food-supply/">Food Supply</a></div>
                   <div className="card-subtitle">
                     <p>
                       {" "}
