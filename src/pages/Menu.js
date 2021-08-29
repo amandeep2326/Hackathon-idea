@@ -26,7 +26,7 @@ function Menu() {
                   </div>
                  
                   <div className="card-title mt-4">
-                  <a href="https://github.com/amandeep2326">
+                  <a href="https://amandeep2326.github.io/Mask-Detection/">
                     Face Mask Detection
                     </a>
                     </div>
