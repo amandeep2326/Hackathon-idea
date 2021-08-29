@@ -127,6 +127,26 @@ function Menu() {
                 </div>
               </div>
             </div>
+            <div className="card col-md-3 mt-4">
+              <div className="card-content">
+                <div className="card-body p-0">
+                  <div className="profile">
+                    {" "}
+                    <img src="#"alt="" />{" "}
+                  </div>
+                  <div className="card-title mt-4"><a href = "https://chatting-app-amandeep.herokuapp.com/">Chat BOT</a></div>
+                  <div className="card-subtitle">
+                    <p>
+                      {" "}
+                      <small className="text-muted">
+                        {" "}
+                        Chat System
+                      </small>{" "}
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
             
           
             <div className="card col-md-3 mt-4">
