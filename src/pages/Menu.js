@@ -114,7 +114,7 @@ function Menu() {
                     {" "}
                     <img src={speaker35} alt="" />{" "}
                   </div>
-                  <div className="card-title mt-4">Vaccines</div>
+                  <div className="card-title mt-4"><a href = "https://amandeep2326.github.io/vaccine/">Vaccines</a></div>
                   <div className="card-subtitle">
                     <p>
                       {" "}
